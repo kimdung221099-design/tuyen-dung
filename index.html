@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kết nối nghề nghiệp phù hợp | Tuyển dụng đa ngành</title>
+<meta name="description" content="Khám phá cơ hội nghề nghiệp ở nhiều công ty, xem mô tả công việc và ứng tuyển qua Kết nối Nghề nghiệp phù hợp.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap">
+<style>
+:root{
+  --hdr:#faf7f0; --hero:#f5efe3; --bg:#fcfaf5; --card:#fffdf9; --ink:#28364a; --muted:#6b7385; --line:#e6e0d3;
+  --coral:#e4785a; --coral-ink:#fff; --eyebrow:#b4492b; --tag:#dbe8df; --tag-ink:#2f5d4a; --due:#f9e3d6; --due-ink:#a2492c;
+  --sage:#e7ede5; --sage-ink:#263b36; --band:#28364a; --band-ink:#f6efe2; --foot:#222f40; --accent-text:#f08a6c;
+  --field:#fffdf9; --note:#edf1ec; --circle:#dbe6de; --green:#3f6b57;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --hdr:#1b2231; --hero:#1f2739; --bg:#171d2b; --card:#212a3d; --ink:#f1ede4; --muted:#a9b0c0; --line:#34405a;
+    --coral:#ec866a; --coral-ink:#1b2231; --eyebrow:#f0987c; --tag:#2a4338; --tag-ink:#bfe0cf; --due:#4a3228; --due-ink:#f6c3ad;
+    --sage:#1f2c2a; --sage-ink:#e3efe8; --band:#121827; --band-ink:#f1ede4; --foot:#0e131f; --accent-text:#f0987c;
+    --field:#171d2b; --note:#243329; --circle:#2a4338; --green:#8fcfb0; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --hdr:#1b2231; --hero:#1f2739; --bg:#171d2b; --card:#212a3d; --ink:#f1ede4; --muted:#a9b0c0; --line:#34405a;
+  --coral:#ec866a; --coral-ink:#1b2231; --eyebrow:#f0987c; --tag:#2a4338; --tag-ink:#bfe0cf; --due:#4a3228; --due-ink:#f6c3ad;
+  --sage:#1f2c2a; --sage-ink:#e3efe8; --band:#121827; --band-ink:#f1ede4; --foot:#0e131f; --accent-text:#f0987c;
+  --field:#171d2b; --note:#243329; --circle:#2a4338; --green:#8fcfb0; color-scheme:dark;
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(90px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hdr);z-index:30}
+h1,h2,h3,.brand b{font-family:"Plus Jakarta Sans","DM Sans",system-ui,sans-serif;letter-spacing:-.035em}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--eyebrow);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--coral);color:var(--coral-ink);font-weight:700;text-decoration:none;border:0;border-radius:999px;padding:16px 30px;font:700 17px "DM Sans",sans-serif;cursor:pointer}
+.btn:hover{filter:brightness(.96)}
+.btn.sm{padding:12px 22px;font-size:16px}
+.btn.line{background:transparent;color:var(--ink);border:1px solid var(--line)}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--hdr);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo{width:50px;height:50px;border-radius:14px;background:var(--coral);color:var(--coral-ink);display:grid;place-items:center}
+.logo svg{width:26px;height:26px}
+.brand b{display:block;font-size:26px;line-height:1}
+.brand small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+nav{display:flex;gap:38px;font-weight:500}
+nav a{text-decoration:none}
+nav a:hover{color:var(--coral)}
+/* hero */
+.hero{background:var(--hero);padding:96px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(46px,7.4vw,92px);line-height:1;font-weight:800;margin:30px 0 28px}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.hero p.lead{color:var(--muted);font-size:20px;max-width:30em;margin:0 0 36px}
+.cta{display:flex;align-items:center;flex-wrap:wrap;gap:34px}
+.cta a.ghost{display:inline-flex;gap:10px;align-items:center;text-decoration:none;font-weight:700}
+.trust{display:flex;align-items:center;gap:16px;color:var(--muted);font-size:16px;margin-top:40px}
+.trust span.ck{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--green)}
+.orbit{position:relative;aspect-ratio:1;max-width:520px;width:100%;margin:0 auto}
+.orbit .ring{position:absolute;border:1px solid var(--line);border-radius:50%;inset:0}
+.orbit .r2{inset:9%}.orbit .r3{inset:19%}
+.orbit .core{position:absolute;inset:27%;border-radius:50%;background:var(--circle);display:grid;place-items:center;color:var(--green)}
+.orbit .core svg{width:42%;height:42%;stroke-width:1.6}
+.chip{position:absolute;display:flex;align-items:center;gap:10px;background:var(--card);border-radius:999px;padding:11px 20px;font-weight:700;font-size:16px;box-shadow:0 6px 22px rgba(40,54,74,.1)}
+.chip::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--coral)}
+.hero{overflow:hidden}
+.rot{position:absolute;inset:0;animation:spin 42s linear infinite}
+.chip{translate:-50% -50%;white-space:nowrap;animation:cspin 42s linear infinite}
+.c1{left:15.6%;top:25.9%}.c2{left:74.1%;top:15.6%}.c3{left:84.4%;top:74.1%}.c4{left:25.9%;top:84.4%}
+@keyframes spin{to{rotate:360deg}}
+@keyframes cspin{to{rotate:-360deg}}
+.spark{animation:tw 3s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.35;scale:.8}50%{opacity:1;scale:1.15}}
+.orbit .ring{animation:pulse 6s ease-in-out infinite}
+.orbit .r2{animation-delay:-2s}.orbit .r3{animation-delay:-4s}
+@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+.spark{position:absolute;color:var(--coral);width:30px;height:30px}
+/* band */
+.band{background:var(--band);color:var(--band-ink)}
+.band .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 30px;padding-top:30px;padding-bottom:30px}
+.band div{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.band b{font:800 38px "Plus Jakarta Sans",sans-serif;color:var(--accent-text);letter-spacing:-.03em}
+.band span{opacity:.85;font-size:16px}
+/* jobs */
+section.jobs{padding:96px 0 90px}
+.jobs-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.jobs-head h2{font-size:clamp(40px,5.6vw,64px);line-height:1.02;font-weight:800;margin:20px 0 0;max-width:7em}
+.jobs-head p{color:var(--muted);max-width:30em;margin:0}
+.tools{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:34px}
+.search{flex:1 1 320px;display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:0 22px;height:74px;color:var(--muted)}
+.search input{flex:1;border:0;background:transparent;font:inherit;color:var(--ink);outline:0;min-width:0}
+select{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:18px;height:74px;padding:0 20px}
+#count{color:var(--muted);font-size:16px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:36px 36px 30px;margin-bottom:20px}
+.job .row{display:flex;justify-content:space-between;gap:30px;align-items:center}
+.job h3{display:inline;font-size:30px;font-weight:700;margin:0;line-height:1.2}
+.tag{display:inline-block;background:var(--tag);color:var(--tag-ink);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-left:12px;vertical-align:middle}
+.job p{color:var(--muted);margin:12px 0 18px;max-width:46em}
+.meta{display:flex;flex-wrap:wrap;gap:10px 26px;color:var(--muted);font-size:15.5px}
+.meta span{display:inline-flex;align-items:center;gap:9px}
+.meta .due{background:var(--due);color:var(--due-ink);font-weight:700;padding:8px 16px;border-radius:999px}
+.acts{display:flex;align-items:center;gap:26px;flex:none}
+.acts button.more{background:none;border:0;font:700 16px "DM Sans",sans-serif;color:var(--ink);display:inline-flex;gap:8px;align-items:center;cursor:pointer}
+.detail{display:none;border-top:1px solid var(--line);margin-top:22px;padding-top:18px;color:var(--ink)}
+.detail ul{margin:8px 0 0;padding-left:1.2em;color:var(--muted)}
+.detail li{margin:5px 0}
+.job.open .detail{display:block}
+.detail h4{margin:18px 0 4px;font-size:16px}
+.detail h4:first-child{margin-top:0}
+.job.open .more svg{transform:rotate(180deg)}
+.empty{color:var(--muted);padding:30px 0}
+/* steps */
+.steps{background:var(--sage);color:var(--sage-ink);padding:120px 0}
+.steps .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.steps h2{font-size:clamp(38px,5vw,60px);line-height:1.05;font-weight:800;margin:22px 0 24px}
+.steps p.sub{color:var(--muted);margin:0;max-width:26em}
+.steps ol{list-style:none;margin:0;padding:0 0 0 46px;border-left:1px solid rgba(63,107,87,.35)}
+.steps li{display:flex;gap:22px;margin:0 0 34px}
+.steps li:last-child{margin:0}
+.steps .n{flex:none;width:54px;height:54px;border-radius:50%;background:var(--hdr);color:var(--eyebrow);font-weight:700;display:grid;place-items:center}
+.steps li b{display:block;font:700 23px "Plus Jakarta Sans",sans-serif;letter-spacing:-.02em}
+.steps li span{color:var(--muted);font-size:16px}
+/* apply */
+.apply{background:var(--band);color:var(--band-ink);padding:110px 0}
+.apply .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start}
+.apply h2{font-size:clamp(38px,5vw,62px);line-height:1.04;font-weight:800;margin:22px 0 28px}
+.apply p.sub{opacity:.88;max-width:24em;margin:0 0 36px}
+.direct{border-top:1px solid rgba(255,255,255,.15);padding-top:30px}
+.direct small{display:block;letter-spacing:.14em;text-transform:uppercase;font-weight:700;font-size:13px;opacity:.8;margin-bottom:12px}
+.direct a{color:var(--accent-text);font-weight:700;font-size:21px;text-decoration:none;display:inline-flex;gap:12px;align-items:center}
+form{background:var(--hdr);color:var(--ink);border-radius:34px;padding:42px}
+form header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:26px}
+form h3{margin:0;font-size:28px;font-weight:700}
+form header span{font-size:14px;color:var(--muted)}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+label{display:block;font-size:15px;font-weight:700;margin-bottom:9px;color:var(--muted)}
+.f{margin-bottom:20px}
+input.in,select.in,textarea{width:100%;font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:16px;padding:0 20px;height:62px}
+textarea{height:130px;padding:16px 20px;resize:vertical}
+select.in{padding-right:14px}
+.note{display:flex;gap:14px;align-items:center;background:var(--note);border-radius:14px;padding:16px 20px;color:var(--muted);font-size:15px;margin-bottom:22px}
+form .btn{width:100%;justify-content:center;border-radius:16px;height:66px}
+.after{text-align:center;color:var(--muted);font-size:15px;margin:18px 0 0}
+footer.foot{background:var(--foot);color:#f1ede4;padding:44px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .brand small{color:#a9b0c0}
+footer a.m{color:#f0987c;text-decoration:none}
+[hidden]{display:none!important}
+.adm-link{font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--eyebrow);text-decoration:none;white-space:nowrap}
+.adm{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;margin-bottom:34px}
+.adm-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.adm-h h3{margin:0;font-size:26px}
+.adm-h span{color:var(--muted);font-size:15px}
+.adm-r{display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid var(--line);padding:12px 0}
+.adm-r b{display:block}
+.adm-r small{color:var(--muted)}
+.adm-b{display:flex;gap:8px;flex:none}
+.adm button:not(.btn){font:700 15px "DM Sans",sans-serif;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.adm-f{border-top:1px solid var(--line);margin-top:10px;padding-top:20px}
+.adm-f h4{margin:0 0 16px;font-size:20px}
+.adm-s{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.adm-t{display:flex;gap:10px;margin:0 0 20px}
+.adm .adm-t button[aria-selected="true"]{background:var(--coral);color:var(--coral-ink);border-color:var(--coral)}
+.adm-f h4:not(:first-child){margin-top:26px}
+.vh{position:absolute;opacity:0;width:1px;height:1px;overflow:hidden}
+.up{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.up span{color:var(--muted);font-size:15px;word-break:break-all}
+.up button{font:700 14px "DM Sans",sans-serif;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+.up input:focus-visible+span{outline:3px solid var(--coral)}
+form .btn.sm{width:auto;height:auto;border-radius:999px;padding:12px 22px}
+#out{background:var(--note);border-radius:16px;padding:20px;margin-top:20px}
+#out p{margin:0 0 12px}
+.outb{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}
+#out textarea{height:200px}
+@media (max-width:900px){
+  nav{display:none}
+  .hero{padding:60px 0}
+  .hero .wrap,.steps .wrap,.apply .wrap{grid-template-columns:1fr}
+  .job .row{flex-direction:column;align-items:flex-start}
+  .job{padding:26px 22px}
+  .g{grid-template-columns:1fr}
+  form{padding:28px 22px}
+  .orbit{max-width:380px}
+  .steps ol{padding-left:24px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rot,.chip,.spark,.orbit .ring{animation:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#tong-quan">
+    <span class="logo"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+    <span><b>Kết nối</b><small>Nghề nghiệp phù hợp</small></span>
+  </a>
+  <nav><a href="#tong-quan">Tổng quan</a><a href="#vi-tri">Vị trí / JD</a><a href="#ung-tuyen">Liên hệ</a></nav>
+  <a id="adminLink" class="adm-link" href="#quan-ly" hidden>Quản lý</a>
+  <a class="btn sm" href="#ung-tuyen">Ứng tuyển <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></header>
+
+<main>
+<section class="hero" id="tong-quan"><div class="wrap">
+  <div>
+    <div class="eyebrow" id="hEy">Một đầu mối · nhiều cơ hội</div>
+    <h1><span id="hT">Tìm công việc hợp với</span> <em id="hE">bạn.</em></h1>
+    <p class="lead" id="hL">Mình là người đồng hành cùng bạn khám phá cơ hội tại nhiều công ty đối tác. Cùng tìm một vị trí phù hợp với năng lực và điều bạn đang hướng tới.</p>
+    <div class="cta">
+      <a class="btn" href="#vi-tri">Khám phá vị trí <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="ghost" href="#ho-tro">Cách mình hỗ trợ <svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+    </div>
+    <div class="trust"><span class="ck"><svg class="i" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span id="hTr">Trao đổi trực tiếp, thông tin rõ ràng, tôn trọng riêng tư.</span></div>
+  </div>
+  <div class="orbit" aria-hidden="true">
+    <div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <div class="core"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.6"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.6a3.6 3.6 0 0 1 0 6.8M18.5 14.6c1.8.9 3 2.8 3 5.4"/></svg></div>
+    <div class="rot"><span class="chip c1">Công nghệ</span><span class="chip c2">Sáng tạo</span><span class="chip c3">Kinh doanh</span><span class="chip c4">Vận hành</span></div>
+    <svg class="spark" style="right:8%;top:6%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>
+  </div>
+</div></section>
+
+<div class="band"><div class="wrap">
+  <div><b id="nGroups">06</b><span id="s0l">nhóm vị trí còn hạn</span></div>
+  <div><b id="s1n">Nhiều</b><span id="s1l">công ty đối tác</span></div>
+  <div><b id="s2n">01</b><span id="s2l">đầu mối hỗ trợ bạn</span></div>
+  <div><b id="s3n">Rõ ràng</b><span id="s3l">từ bước trao đổi đầu tiên</span></div>
+</div></div>
+
+<section class="jobs" id="vi-tri"><div class="wrap">
+  <div class="jobs-head">
+    <div><div class="eyebrow">Cơ hội đang mở</div><h2>Chọn hướng đi của bạn.</h2></div>
+    <p>Các vị trí được tuyển cho công ty đối tác. Mức lương, địa điểm và yêu cầu cụ thể sẽ khác nhau tùy từng công ty — mình sẽ trao đổi rõ khi kết nối.</p>
+  </div>
+  <div id="admin" hidden></div>
+  <div class="tools">
+    <label class="search" style="margin:0"><svg class="i" viewBox="0 0 24 24" style="width:24px;height:24px"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="Tìm vị trí hoặc từ khóa…" aria-label="Tìm vị trí"></label>
+    <select id="field" aria-label="Lĩnh vực"><option value="">Tất cả lĩnh vực</option></select>
+    <span id="count"></span>
+  </div>
+  <div id="list"></div>
+</div></section>
+
+<section class="steps" id="ho-tro"><div class="wrap">
+  <div>
+    <div class="eyebrow">Đồng hành cùng bạn</div>
+    <h2>Không chỉ gửi JD. Mình cùng bạn tìm sự phù hợp.</h2>
+    <p class="sub">Một cuộc trò chuyện cởi mở giúp mình hiểu điều bạn cần — và giúp bạn hiểu rõ hơn về cơ hội trước khi quyết định.</p>
+  </div>
+  <ol>
+    <li><span class="n">01</span><div><b>Chia sẻ điều bạn đang tìm</b><span>Gửi vị trí quan tâm, kinh nghiệm và mong muốn của bạn qua email.</span></div></li>
+    <li><span class="n">02</span><div><b>Cùng xem cơ hội phù hợp</b><span>Mình trao đổi rõ về mô tả, yêu cầu và thông tin của công ty đối tác.</span></div></li>
+    <li><span class="n">03</span><div><b>Kết nối và theo sát</b><span>Mình hỗ trợ bạn trong các bước tiếp theo và cập nhật tiến trình tuyển dụng.</span></div></li>
+  </ol>
+</div></section>
+
+<section class="apply" id="ung-tuyen"><div class="wrap">
+  <div>
+    <div class="eyebrow">Bắt đầu từ một lời chào</div>
+    <h2>Cơ hội tiếp theo có thể bắt đầu tại đây.</h2>
+    <p class="sub">Để lại thông tin và vị trí bạn quan tâm. Email ứng tuyển sẽ được soạn sẵn để bạn kiểm tra, đính kèm CV rồi gửi đi.</p>
+    <div class="direct"><small>Liên hệ trực tiếp</small><a href="https://zalo.me/0362259205" target="_blank" rel="noopener" style="margin-bottom:14px"><svg class="i" viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>Zalo: 0362 259 205</a><br><a href="mailto:kimdung221099@gmail.com"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>kimdung221099@gmail.com</a></div>
+  </div>
+  <form id="f" novalidate>
+    <header><h3>Thông tin ứng tuyển</h3><span>* Bắt buộc</span></header>
+    <div class="g">
+      <div class="f"><label for="n">Họ và tên *</label><input class="in" id="n" required autocomplete="name"></div>
+      <div class="f"><label for="e">Email *</label><input class="in" id="e" type="email" required autocomplete="email"></div>
+      <div class="f"><label for="p">Số điện thoại *</label><input class="in" id="p" type="tel" required autocomplete="tel"></div>
+      <div class="f"><label for="pos">Vị trí quan tâm *</label><select class="in" id="pos" required></select></div>
+    </div>
+    <div class="f"><label for="cv">Link CV / Portfolio (không bắt buộc)</label><input class="in" id="cv" type="url" placeholder="https://…"></div>
+    <div class="f"><label for="cvf">Tải CV lên (PDF, DOC, DOCX, tối đa 10 MB)</label><div class="up"><label class="btn line sm" for="cvf" style="margin:0;cursor:pointer">Tải CV lên</label><input id="cvf" class="vh" type="file" accept=".pdf,.doc,.docx"><span id="cvn">Chưa chọn tệp</span><button type="button" id="cvx" hidden>Bỏ tệp</button></div></div>
+    <div class="f"><label for="msg">Lời nhắn (không bắt buộc)</label><textarea id="msg" placeholder="Chia sẻ ngắn về kinh nghiệm hoặc mong muốn của bạn…"></textarea></div>
+    <div class="note"><svg class="i" viewBox="0 0 24 24" style="width:22px;height:22px"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6"/></svg>Chọn CV ở trên rồi soạn email. Email không tự đính kèm được tệp, nên bạn nhớ gắn CV vào trước khi gửi.</div>
+    <button class="btn" type="submit">Soạn email ứng tuyển <svg class="i" viewBox="0 0 24 24"><path d="M21 3L3 11l7 3 3 7zM10 14l11-11"/></svg></button>
+    <p class="after" id="after" role="status">Bản nháp email sẽ sẵn sàng sau khi bạn điền đủ thông tin.</p>
+    <div id="out" hidden></div>
+  </form>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="brand"><span class="logo"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><span><b style="color:#f0987c">Kết nối</b><small>Nghề nghiệp phù hợp</small></span></div>
+  <span>Kết nối chân thành, chọn công việc phù hợp.</span>
+  <span><a class="m" href="https://zalo.me/0362259205" target="_blank" rel="noopener">Zalo 0362 259 205</a> · <a class="m" href="mailto:kimdung221099@gmail.com">kimdung221099@gmail.com</a></span>
+</div></footer>
+
+<script type="application/json" id="jobs-data">{"jobs":[{"t":"Thực tập sinh IT (Fullstack)","c":"Công ty Cổ phần Hupuna Group","f":"Công nghệ","d":"Hupuna Group đang tìm kiếm các bạn Thực tập sinh IT đam mê lập trình, mong muốn được đào tạo bài bản để phát triển theo hướng Fullstack Developer. Bạn sẽ được học và tham gia hỗ trợ xây dựng giao diện web với Next.js (Frontend) và làm quen với thiết kế API bằng Nest.js (Backend) dưới sự hướng dẫn trực tiếp của các anh chị Senior/Mentor trong công ty.","l":"Khu Sunrise H, KĐT The Manor Central Park, Định Công, Hà Nội","s":"3tr/tháng","dl":"","more":["# Trách nhiệm công việc","Frontend: hỗ trợ xây dựng và chỉnh sửa giao diện người dùng bằng Next.js theo hướng dẫn của Mentor.","Backend: học và hỗ trợ xây dựng các API cơ bản bằng Nest.js, làm quen với cấu trúc database.","Học tập: tham gia các buổi đào tạo nội bộ về kiến trúc hệ thống, quy trình phát triển phần mềm.","Hỗ trợ: tham gia fix lỗi, viết tài liệu, hỗ trợ test tính năng trước khi release.","Phối hợp: làm việc cùng đội dự án theo quy trình Agile/Scrum, tham gia các buổi họp daily/standup.","# Yêu cầu","Không yêu cầu kinh nghiệm, ưu tiên tinh thần ham học hỏi.","Đang học hoặc mới tốt nghiệp các ngành CNTT, Khoa học máy tính hoặc liên quan.","Có kiến thức cơ bản về JavaScript/TypeScript, HTML, CSS; đã tìm hiểu hoặc mong muốn học Next.js và Nest.js.","Tư duy logic tốt, chịu khó tìm tòi và tự học; biết sử dụng Git là một lợi thế.","Có laptop cá nhân để phục vụ công việc.","# Quyền lợi","Trợ cấp thực tập: 3tr/tháng.","Được kèm cặp 1:1 bởi đội ngũ Senior giàu kinh nghiệm, đào tạo lộ trình Fullstack bài bản từ A đến Z.","Tham gia trực tiếp vào các dự án thực tế của công ty, không chỉ làm bài tập mô phỏng.","Môi trường làm việc trẻ trung, năng động, đồng nghiệp thân thiện.","Cơ hội ký hợp đồng chính thức sau thời gian thực tập nếu đáp ứng yêu cầu.","Được cấp giấy xác nhận thực tập/chứng nhận hoàn thành chương trình.","# Thời gian làm việc","8h00 – 12h00, 13h30 – 17h30, thứ 2 – thứ 7 (nghỉ Chủ nhật). Có thể linh hoạt theo lịch học nếu bạn vẫn đang là sinh viên."]},{"t":"Lập trình viên phần mềm Marketing (Python / Web)","c":"Công ty Cổ phần Hupuna Group","f":"Công nghệ","d":"Phát triển phần mềm Windows và ứng dụng web phục vụ trực tiếp hoạt động marketing của công ty: tự động hóa công việc lặp lại, quản lý chiến dịch, xử lý dữ liệu và đo lường hiệu quả. Làm việc trực tiếp với đội Marketing để biến nhu cầu thực tế thành sản phẩm dùng hằng ngày.","l":"Tầng 3, Tòa B, Ecodream, Ngõ 300 Nguyễn Xiển, Hà Nội","s":"10 – 15 triệu","dl":"","more":["# Thông tin chung","Cấp bậc: Junior / Middle. Hình thức: toàn thời gian.","Thời gian làm việc: 8h00 – 17h30.","# Trách nhiệm chính","Phát triển phần mềm Windows (desktop): quản lý nhiều tài khoản/fanpage, đăng bài theo lịch, gửi tin nhắn/email theo kịch bản, xử lý hình ảnh/video hàng loạt.","Phát triển ứng dụng web: dashboard báo cáo, hệ thống quản lý chiến dịch, công cụ tạo UTM/link tracking, quản lý lead, phân quyền người dùng.","Tự động hóa tác vụ trên trình duyệt và hệ thống, thu thập dữ liệu công khai, lập lịch chạy định kỳ, cảnh báo khi có lỗi.","Tích hợp API với Facebook/Meta, Google Ads, TikTok, Google Analytics 4, Zalo OA/ZNS, email marketing, CRM và các dịch vụ bên thứ ba.","Thiết kế cơ sở dữ liệu và backend: xây dựng API, lưu trữ và đồng bộ dữ liệu giữa phần mềm Windows, web và máy chủ.","Đóng gói và phát hành phần mềm: bộ cài đặt, cơ chế tự động cập nhật, quản lý bản quyền/tài khoản khi cần.","Ứng dụng AI/LLM vào tool: tạo nội dung, phân loại bình luận, trả lời tin nhắn, phân tích dữ liệu.","Viết hướng dẫn sử dụng, hỗ trợ đội Marketing vận hành, tiếp nhận góp ý và cải tiến tool.","Theo dõi, sửa lỗi, tối ưu hiệu năng và bảo mật các phần mềm đang chạy.","# Yêu cầu bắt buộc","Tốt nghiệp CNTT hoặc có kinh nghiệm tương đương; ít nhất 1 năm kinh nghiệm lập trình.","Lập trình tốt bằng Python.","Kinh nghiệm lập trình web cơ bản: HTML, CSS, JavaScript và một ngôn ngữ/framework backend (Flask, Django, FastAPI, Node.js hoặc PHP).","Có kinh nghiệm làm việc với REST API và xử lý JSON.","Biết SQL và làm việc với cơ sở dữ liệu (MySQL, PostgreSQL hoặc tương đương).","Biết sử dụng Git và làm việc nhóm.","Tư duy giải quyết vấn đề, chủ động trao đổi với người không chuyên kỹ thuật.","# Ưu tiên","Đã làm ứng dụng Windows bằng Python (PyQt, Tkinter) và biết đóng gói phần mềm (PyInstaller, Inno Setup).","Có kinh nghiệm tự động hóa trình duyệt (Selenium, Playwright) hoặc web scraping.","Biết framework frontend (React/Vue).","Đã làm việc với API của Meta, Google Ads, TikTok hoặc GA4.","Hiểu các khái niệm marketing: funnel, ROAS, CPA, CTR, UTM, remarketing.","Có kinh nghiệm tích hợp LLM API (OpenAI, Claude...) vào sản phẩm.","Biết Docker, VPS/cloud và CI/CD.","# Quyền lợi","Lương 10 – 15 triệu/tháng (thỏa thuận theo năng lực), xét tăng lương định kỳ 2 lần/năm.","Thưởng hiệu suất, thưởng lễ Tết, thưởng tháng 13.","Bảo hiểm xã hội, y tế đầy đủ theo luật; bảo hiểm sức khỏe bổ sung.","Chế độ làm việc linh hoạt, thiết bị làm việc được cấp đầy đủ.","Ngân sách đào tạo, học khóa học và chứng chỉ.","Môi trường trẻ, cởi mở, được tự do đề xuất và thử nghiệm giải pháp mới.","Cơ hội phát triển lên Tech Lead hoặc quản lý sản phẩm công nghệ."]},{"t":"Thực tập sinh Marketing","c":"LION KING","f":"Marketing","d":"LION KING tìm 02 bạn Thực tập sinh Marketing đam mê sáng tạo: làm content, quay chụp sản phẩm, livestream chốt đơn, tiếp thị Affiliate, seeding và xây kênh social. Vừa học, vừa làm, có thu nhập.","l":"Khu đô thị mới Dương Nội, Hà Nội","s":"2tr + KPI","dl":"","more":["# Công việc","Sáng tạo nội dung: lên ý tưởng, viết bài cho Facebook, TikTok, Instagram, YouTube; xây dựng kịch bản video ngắn; thiết kế hoặc phối hợp thực hiện hình ảnh, ấn phẩm cơ bản; theo dõi trend và đề xuất ý tưởng mới.","Quay chụp và bán hàng: quay, chụp sản phẩm; tham gia livestream chốt đơn; triển khai tiếp thị Affiliate; hỗ trợ dựng và chỉnh sửa video cơ bản.","Seeding và xây kênh social: tương tác, seeding tăng nhận diện thương hiệu; theo dõi số liệu (lượt xem, tương tác, đơn hàng) và báo cáo định kỳ.","# Yêu cầu","Sinh viên năm cuối hoặc mới tốt nghiệp, ưu tiên Marketing, Truyền thông, Báo chí, Kinh tế hoặc liên quan.","Nghiêm túc, đam mê công việc, có trách nhiệm.","Ham học hỏi, dám dấn thân và hành động.","Sắp xếp được thời gian làm việc toàn thời gian theo lịch công ty.","Ưu tiên (không bắt buộc): từng làm kênh cá nhân, biết CapCut/Canva, tự tin trước ống kính.","# Quyền lợi","2 triệu/tháng hỗ trợ cứng, thưởng KPI doanh thu khi làm tốt và có kết quả.","Môi trường trẻ trung, học trực tiếp từ các “cao thủ Marketing”.","Cơ hội trở thành nhân viên chính thức sau thực tập.","# Thời gian làm việc","8h00 – 17h30, thứ 2 – thứ 7. Số lượng: 02 người."]},{"t":"Nhân viên Sale","c":"Công ty Cổ phần Hupuna Group","f":"Kinh doanh","d":"Tư vấn, chăm sóc khách hàng và chốt đơn các sản phẩm bao bì của công ty (hộp giấy, túi giấy, băng dính, băng keo, màng PE, xốp nổ) qua Pancake, Zalo và điện thoại. Không yêu cầu kinh nghiệm, được đào tạo.","l":"Khu Sunrise H, KĐT The Manor Central Park, Định Công, Hà Nội","s":"8 – 15 triệu","dl":"","more":["# Thu nhập","Lương cơ bản + phụ cấp + % doanh số + thưởng: 8 – 15 triệu (không giới hạn).","Lương tháng 13 và thưởng hấp dẫn.","Được đào tạo và có lộ trình thăng tiến.","# Mô tả công việc","Liên hệ, trả lời, tư vấn khách hàng về sản phẩm và chốt đơn qua Pancake, Zalo, điện thoại.","Chăm sóc khách hàng mới và tệp khách hàng cũ để gia tăng doanh số.","Theo dõi tiến trình đơn hàng, giao hàng.","Quản lý, theo dõi và phân loại tệp khách hàng.","Xử lý và giải đáp thắc mắc của khách hàng về sản phẩm.","Tổng hợp báo cáo công việc theo yêu cầu và các việc khác do quản lý giao.","# Yêu cầu","Tốt nghiệp Trung cấp trở lên.","Nhanh nhẹn, chịu khó, kỹ năng giao tiếp tốt.","Ưu tiên ứng viên đã làm sale; không có kinh nghiệm sẽ được đào tạo.","# Quyền lợi","Đóng BHXH, nghỉ Lễ, Tết theo quy định của Nhà nước và Công ty.","Môi trường làm việc chuyên nghiệp, thân thiện, nhiều cơ hội thăng tiến.","# Thời gian làm việc","8h00 – 12h00, 13h30 – 17h30, thứ 2 – thứ 7, nghỉ Chủ nhật.","Lưu ý: khi đến phỏng vấn, mang theo CV bản cứng."]},{"t":"Nhân viên Trực Page (Part-time)","c":"Công ty Cổ phần Hupuna Group","f":"Kinh doanh","d":"Tiếp nhận data khách hàng từ Marketing qua Pancake, tư vấn, báo giá và chốt đơn. Làm theo ca sáng, chiều hoặc tối, không yêu cầu kinh nghiệm.","l":"Khu Sunrise H, KĐT The Manor Central Park, Định Công, Hà Nội","s":"25 – 35k/giờ","dl":"","more":["# Thu nhập","25.000đ – 35.000đ/giờ.","Thưởng thêm theo doanh số chốt đơn (nếu có).","# Mô tả công việc","Tiếp nhận data khách hàng từ Marketing qua Pancake.","Tư vấn và chăm sóc khách hàng.","Giải đáp thắc mắc, báo giá sản phẩm và chốt đơn.","Xử lý đơn hàng sau khi khách chốt đơn; chăm sóc khách hàng sau khi trải nghiệm sản phẩm.","Đăng bài tìm kiếm data trên các hội nhóm Facebook, Zalo.","# Yêu cầu","Có máy tính cá nhân.","Nhanh nhẹn, trung thực, chủ động trong công việc.","Không yêu cầu kinh nghiệm, được đào tạo. Ưu tiên ứng viên có thể nhận ca tối.","# Thời gian làm việc","Ca sáng 8h00 – 12h00; ca chiều 13h30 – 17h30; ca tối 18h00 – 22h00.","# Quyền lợi","Các chính sách, chế độ khác theo quy định của Công ty.","Môi trường làm việc chuyên nghiệp, thân thiện, nhiều cơ hội thăng tiến."]},{"t":"Thực tập sinh Sàn Thương mại điện tử (Part-time)","c":"Công ty Cổ phần Hupuna Group","f":"Kinh doanh","d":"Quản lý gian hàng, đăng sản phẩm trên các sàn thương mại điện tử, tư vấn khách hàng trên Shopee và nghiên cứu phát triển Shopee, TikTok Shop.","l":"Khu Sunrise H, KĐT The Manor Central Park, Định Công, Hà Nội","s":"25 – 35k/giờ","dl":"","more":["# Thu nhập","Part-time: 25 – 35k/giờ + thưởng.","# Mô tả công việc","Quản lý, chỉnh sửa gian hàng và đăng bài sản phẩm lên các sàn thương mại điện tử.","Kéo traffic về shop thông qua Facebook.","Tư vấn sản phẩm trên Shopee, chăm sóc khách hàng cũ trên Zalo.","Giải đáp thắc mắc, báo giá sản phẩm và chốt đơn.","Xử lý các vấn đề phát sinh trong quá trình giao hàng.","Nghiên cứu phát triển Shopee, TikTok Shop.","# Yêu cầu","Có máy tính cá nhân.","Học chuyên ngành sàn thương mại điện tử.","Nhanh nhẹn, trung thực, chủ động trong công việc.","# Quyền lợi","Môi trường làm việc chuyên nghiệp và thân thiện.","Nhiều cơ hội thăng tiến, phát triển nghề nghiệp.","# Thời gian làm việc","8h00 – 12h00, 13h30 – 17h30, thứ 2 – thứ 7, nghỉ Chủ nhật."]},{"t":"Chuyên viên tuyển dụng (HCNS Part-time)","c":"Công ty Cổ phần Hupuna Group","f":"Nhân sự","d":"Trực tiếp tuyển dụng các vị trí trong toàn công ty: đăng tin, sàng lọc hồ sơ, phỏng vấn, đánh giá và đàm phán với ứng viên. Được kèm cặp kỹ năng tuyển dụng nhân sự.","l":"Khu Sunrise H, KĐT The Manor Central Park, Định Công, Hà Nội","s":"20 – 30k/giờ","dl":"","more":["# Thông tin chung","Cấp quản lý trực tiếp: Trưởng phòng HCNS. Đơn vị: Hành chính – Nhân sự.","# Thu nhập","Thu nhập hỗ trợ: 20 – 30k/giờ + thưởng.","# Mô tả công việc","Trực tiếp tuyển dụng các vị trí trong toàn công ty.","Đăng tin tuyển dụng qua các kênh nguồn online và offline.","Tiếp nhận hồ sơ, sàng lọc, sắp xếp lịch phỏng vấn.","Tổ chức phỏng vấn, đánh giá, lựa chọn, đàm phán với ứng viên nhận việc.","Tổ chức các hoạt động truyền thông tuyển dụng; quản lý và thực hiện báo cáo tuyển dụng.","# Yêu cầu","Có máy tính cá nhân.","Nhanh nhẹn, hoạt bát, hướng ngoại.","Cẩn thận, trung thực, nhiệt tình, có trách nhiệm, sắp xếp công việc khoa học.","Ưu tiên bạn yêu thích tuyển dụng và muốn phát triển theo định hướng tuyển dụng.","Thành thạo MS Office và các phần mềm liên quan.","# Quyền lợi","Hỗ trợ dấu thực tập.","Được mở rộng và phát triển mạng lưới tuyển dụng.","Được kèm cặp kỹ năng tuyển dụng: lập kế hoạch, truyền thông tuyển mộ, sàng lọc hồ sơ, phỏng vấn và đánh giá ứng viên.","Cơ hội trở thành nhân viên chính thức sau thực tập.","Môi trường gen Z trẻ trung, năng động, sáng tạo; nhiều cơ hội thăng tiến.","# Thời gian làm việc","Ca sáng 8h00 – 12h00; ca chiều 13h30 – 17h30, thứ 2 – thứ 7."]},{"t":"Chuyên viên Tuyển dụng – Hành chính","c":"Công ty Cổ phần Phát triển Sản phẩm Khoa học Xanh","f":"Nhân sự","d":"Phụ trách tuyển dụng và hành chính – nhân sự: lập kế hoạch, đăng tin, sàng lọc hồ sơ, phỏng vấn, tiếp nhận nhân sự mới, quản lý hồ sơ và tổ chức hoạt động nội bộ.","l":"Nguyễn Xiển, Khương Đình, Hà Nội","s":"14 – 18 triệu","dl":"","more":["# Thu nhập","14 – 18 triệu/tháng: lương cứng 12 – 15 triệu + thưởng theo hiệu quả tuyển dụng.","# Mảng tuyển dụng","Phối hợp các bộ phận xác định nhu cầu nhân sự, lập kế hoạch và triển khai tuyển dụng.","Soạn thảo và đăng tin tuyển dụng trên website việc làm, mạng xã hội, hội nhóm, giới thiệu nội bộ.","Chủ động tìm kiếm, sàng lọc hồ sơ và liên hệ ứng viên.","Sắp xếp lịch, tham gia phỏng vấn và đánh giá ứng viên cùng các bộ phận liên quan.","Theo dõi, báo cáo kết quả và đề xuất cải thiện hiệu quả các kênh tuyển dụng.","Thực hiện quy trình tiếp nhận nhân sự mới: thư mời nhận việc, chuẩn bị hồ sơ, hướng dẫn hội nhập.","# Mảng hành chính – nhân sự","Quản lý hồ sơ nhân sự, hợp đồng lao động, chấm công và nghỉ phép.","Theo dõi việc thực hiện nội quy, quy chế của công ty.","Tổ chức các hoạt động nội bộ: du lịch, teamwork, sinh nhật và các sự kiện trong năm.","# Yêu cầu","Tối thiểu 01 năm kinh nghiệm trong lĩnh vực tuyển dụng.","Giao tiếp, phỏng vấn và đánh giá ứng viên tốt.","Cẩn thận, trung thực, bảo mật thông tin nhân sự.","Kỹ năng tổ chức công việc, quản lý thời gian và làm việc với nhiều bộ phận.","Thành thạo tin học văn phòng (Word, Excel…); hiểu biết cơ bản về Luật Lao động là lợi thế.","Sẵn sàng làm việc theo lịch công ty (bao gồm sáng thứ 7).","# Quyền lợi","Đóng bảo hiểm đầy đủ theo quy định, lương tháng 13 và các chế độ phúc lợi khác.","Du lịch, teamwork, sinh nhật và các hoạt động nội bộ hằng năm.","Môi trường trẻ trung, năng động, nhiều cơ hội học hỏi và phát triển.","# Thời gian làm việc","8h00 – 17h00, thứ 2 – thứ 6 và sáng thứ 7."]},{"t":"Nhân viên Kế toán nội bộ","c":"Công ty Cổ phần Hupuna Group","f":"Kế toán – Tài chính","d":"Theo dõi thu – chi, dòng tiền, công nợ, kho nguyên vật liệu, giá thành sản phẩm và tiến độ đơn hàng; tổng hợp báo cáo gửi Kế toán trưởng. Không yêu cầu kinh nghiệm, chấp nhận sinh viên mới ra trường.","l":"Tầng 3, Tòa B, Ecodream, Ngõ 300 Nguyễn Xiển, Hà Nội","s":"6 – 10 triệu","dl":"","more":["# Thông tin chung","Cấp quản lý trực tiếp: Kế toán trưởng. Đơn vị: Phòng Kế toán.","Hình thức làm việc: toàn thời gian.","# Thu nhập","6 – 10 triệu/tháng, gồm lương cứng theo thỏa thuận và phụ cấp (ăn trưa, gửi xe, điện thoại... theo quy định công ty).","Thưởng theo hiệu quả công việc, thưởng lễ/Tết; xét tăng lương định kỳ theo năng lực và thâm niên.","# Mô tả công việc","Theo dõi thu – chi, dòng tiền.","Quản lý nguyên vật liệu và kho hàng.","Tính giá thành sản phẩm.","Theo dõi công nợ và tiến độ đơn hàng.","Tổng hợp báo cáo công việc hằng tuần, hằng tháng và báo cáo đột xuất cho Kế toán trưởng.","Thực hiện các nhiệm vụ khác theo phân công của Kế toán trưởng/Ban lãnh đạo.","# Yêu cầu","Có máy tính cá nhân; sử dụng thành thạo tin học văn phòng (Word, Excel cơ bản đến nâng cao).","Nhanh nhẹn, cẩn thận, trung thực, có trách nhiệm; chủ động, sắp xếp công việc khoa học.","Không yêu cầu kinh nghiệm, chấp nhận sinh viên mới ra trường.","Ưu tiên: đã học hoặc tốt nghiệp Kế toán, Tài chính, Quản trị kinh doanh; biết dùng MISA, Excel nâng cao; ở gần khu vực làm việc.","# Quyền lợi","Lương thỏa thuận theo năng lực, xét tăng lương định kỳ.","Đầy đủ chế độ phúc lợi theo quy định của Công ty.","Được đào tạo, hướng dẫn công việc từ đầu nếu chưa có kinh nghiệm.","Môi trường chuyên nghiệp, thân thiện; cơ hội phát triển lâu dài trong lĩnh vực kế toán sản xuất.","# Thời gian làm việc","8h00 – 17h30, thứ 2 – thứ 7, nghỉ Chủ nhật."]},{"t":"Thực tập sinh Kế toán","c":"Công ty Cổ phần Hupuna Group","f":"Kế toán – Tài chính","d":"Hỗ trợ kế toán kiểm tra, phân loại hóa đơn chứng từ, ghi chép sổ sách và nhập liệu phiếu chi vào phần mềm MISA. Dành cho sinh viên năm cuối ngành Tài chính – Kế toán.","l":"Khu Sunrise H, KĐT The Manor Central Park, Định Công, Hà Nội","s":"3tr/tháng","dl":"","more":["# Mô tả công việc","Hỗ trợ kế toán sắp xếp, kiểm tra và phân loại hóa đơn, chứng từ.","Hỗ trợ ghi chép sổ sách kế toán theo hướng dẫn.","Lưu trữ, quản lý hồ sơ và chứng từ kế toán liên quan.","Đóng cuốn phiếu thu, phiếu chi kèm hóa đơn photo, phiếu xuất kho, nhập kho theo yêu cầu.","Nhập liệu phiếu chi vào phần mềm kế toán MISA.","# Yêu cầu ứng viên","Sinh viên năm cuối các trường Đại học, Cao đẳng chuyên ngành Tài chính – Kế toán, Kế toán doanh nghiệp.","Nắm vững kiến thức cơ bản về kế toán và thuế; chưa yêu cầu kinh nghiệm.","Có khả năng đọc hiểu, tra cứu nhanh văn bản luật, quy định về thuế, kế toán.","Nhiệt tình, năng nổ, tự tin giao tiếp, có tinh thần cầu tiến, ham học hỏi.","# Quyền lợi","Lương hỗ trợ 3.000.000đ/tháng.","Được đào tạo nghiệp vụ kế toán, thuế, thủ tục hành chính doanh nghiệp và phần mềm kế toán online của công ty.","Được truy cập kho học liệu nội bộ: sách, bài giảng online (Edumall, Kyna, Unica), tài liệu ôn thi Đại lý thuế.","Tham gia các buổi seminar về kỹ năng làm việc, chuyên môn kế toán – thuế, sale và marketing.","Môi trường trẻ trung, năng động, đánh giá theo kết quả công việc.","Cơ hội trở thành nhân viên chính thức sau thực tập nếu kết quả tốt.","Được xác nhận thực tập, đóng dấu báo cáo thực tập theo yêu cầu của nhà trường.","# Thời gian làm việc","Thứ 2 – thứ 7."]},{"t":"Nhân viên Thiết kế","c":"Công ty Cổ phần Hupuna Group","f":"Thiết kế","d":"Lên maquette hộp sóng, hộp cứng, hộp quà tặng, túi giấy; thiết kế bao bì và tem nhãn quảng cáo cho các sản phẩm mang thương hiệu công ty.","l":"Khu Sunrise H, KĐT The Manor Central Park, Định Công, Hà Nội","s":"8 – 15 triệu","dl":"","more":["# Thông tin chung","Vị trí: Chuyên viên Thiết kế / Nhân viên Thiết kế. Đơn vị: Thiết kế – Marketing.","Cấp quản lý trực tiếp: Giám đốc/Trưởng phòng Thiết kế – Marketing.","# Thu nhập","8 – 15 triệu (theo năng lực và kinh nghiệm) + thưởng.","# Mô tả công việc","Lên maquette của tất cả các loại hộp sóng, hộp cứng, hộp quà tặng, túi giấy.","Thiết kế bao bì sản phẩm, tem nhãn quảng cáo cho các sản phẩm mang thương hiệu công ty.","Lên layout minh họa cho các concept thiết kế.","Tham gia sáng tạo concept, phát triển ý tưởng, xây dựng hình ảnh và thực hiện thiết kế cho các ấn phẩm của công ty.","Các công việc thiết kế khác theo chỉ đạo của cấp trên.","# Yêu cầu","Có máy tính cá nhân.","Tốt nghiệp chuyên ngành thiết kế, đồ họa hoặc liên quan.","Từ 02 năm kinh nghiệm ở vị trí tương đương, hoặc từ 01 năm ở công ty sản xuất hộp carton, quà tặng, quà Tết, trang sức, đồng phục.","Thành thạo Photoshop, CorelDraw, Illustrator, vẽ 2D và các phần mềm liên quan.","Sáng tạo, nhanh nhẹn, chủ động, có trách nhiệm.","Ưu tiên: có kinh nghiệm thiết kế hộp lạnh, hộp cứng và am hiểu kỹ thuật hộp cứng; biết chụp ảnh, quay video.","# Quyền lợi","Đóng BHXH, nghỉ Lễ, Tết theo quy định Nhà nước và Công ty.","Môi trường làm việc chuyên nghiệp, thân thiện, nhiều cơ hội thăng tiến.","# Thời gian làm việc","8h00 – 12h00, 13h30 – 17h30, thứ 2 – thứ 7, nghỉ Chủ nhật."]}]}</script>
+<script>
+var EMAIL="kimdung221099@gmail.com";
+var JOBS=[
+ {t:"Thực tập sinh Marketing",c:"LION KING",f:"Marketing",d:"LION KING tìm 02 bạn Thực tập sinh Marketing: sáng tạo content, quay chụp sản phẩm, livestream, Affiliate, seeding và xây kênh social. Vừa học, vừa làm, có lương.",l:"Khu đô thị mới Dương Nội, Hà Nội",s:"2tr + KPI",more:["Thời gian: 8h00 – 17h30, thứ 2 đến thứ 7.","Yêu cầu: nghiêm túc, đam mê, ham học hỏi, dám dấn thân và hành động.","Quyền lợi: 2 triệu hỗ trợ cứng, thưởng KPI doanh thu, cơ hội lên nhân viên chính thức."]},
+ {t:"Thực tập sinh IT",c:"Công ty Cổ phần Hupuna Group",f:"Công nghệ",d:"Hupuna Group đang tìm kiếm các bạn Thực tập sinh IT đam mê lập trình, mong muốn được đào tạo bài bản để phát triển theo hướng Fullstack Developer. Bạn sẽ được học và tham gia hỗ trợ xây dựng giao diện web với Next.js (Frontend) và làm quen với thiết kế API bằng Nest.js (Backend) dưới sự hướng dẫn trực tiếp của các anh chị Senior/Mentor trong công ty.",l:"Khu Sunrise H, KĐT The Manor Central Park, Định Công, Hà Nội",s:"3tr",more:["Chi tiết yêu cầu và quyền lợi sẽ được trao đổi khi kết nối."]},
+ {t:"Chuyên viên tuyển dụng",c:"Công ty đối tác",f:"Nhân sự",d:"Tham gia tìm kiếm, kết nối và đồng hành cùng ứng viên trong suốt hành trình tuyển dụng.",l:"Trao đổi theo công ty",s:"Trao đổi theo công ty",more:["Phạm vi công việc cụ thể sẽ được trao đổi theo nhu cầu của từng đối tác."]},
+ {t:"Kế toán",c:"Công ty đối tác",f:"Tài chính",d:"Cơ hội kế toán với phạm vi công việc cụ thể được trao đổi theo nhu cầu của từng đối tác.",l:"Trao đổi theo công ty",s:"Trao đổi theo công ty",more:["Chi tiết sẽ được trao đổi khi kết nối."]}
+];
+var SITE=null;
+try{var sv=document.getElementById("jobs-data").textContent.trim();if(sv){var D=JSON.parse(sv);if(Array.isArray(D)){JOBS=D}else{if(D.jobs)JOBS=D.jobs;if(D.site)SITE=D.site}}}catch(e){}
+var I={job:'<svg class="i" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>',
+ pin:'<svg class="i" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>',
+ clock:'<svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+ chev:'<svg class="i" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>',
+ arrow:'<svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'};
+function esc(s){return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var list=document.getElementById("list"),q=document.getElementById("q"),fld=document.getElementById("field"),pos=document.getElementById("pos");
+function fill(){
+  var fv=fld.value,pv=pos.value,fields=[];fld.length=1;pos.length=0;
+  JOBS.forEach(function(j){if(j.f&&fields.indexOf(j.f)<0)fields.push(j.f)});
+  fields.forEach(function(f){fld.add(new Option(f,f))});
+  JOBS.forEach(function(j,i){pos.add(new Option(j.t+" — "+j.c,i))});
+  document.getElementById("nGroups").textContent=(fields.length<10?"0":"")+fields.length;
+  if(fields.indexOf(fv)>=0)fld.value=fv;
+  if(pv!==""&&+pv<JOBS.length)pos.value=pv;
+}
+fill();
+function render(){
+  var k=q.value.trim().toLowerCase(),f=fld.value,n=0,h="";
+  JOBS.forEach(function(j,i){
+    var hay=(j.t+" "+j.c+" "+j.d+" "+j.f).toLowerCase();
+    if((k&&hay.indexOf(k)<0)||(f&&j.f!==f))return;
+    n++;
+    h+='<article class="job" id="job'+i+'"><div class="row"><div><h3>'+esc(j.t)+'</h3><span class="tag">'+esc(j.c)+'</span><p>'+esc(j.d)+'</p>'+
+    '<div class="meta"><span>'+I.job+esc(j.f)+'</span><span>'+I.pin+esc(j.l)+'</span><span>'+I.clock+esc(j.s)+'</span><span class="due">'+I.clock+esc(j.dl||"Chưa đặt hạn")+'</span></div></div>'+
+    '<div class="acts"><button class="more" type="button" aria-expanded="false" data-i="'+i+'">Xem mô tả '+I.chev+'</button><button class="btn line sm" type="button" data-a="'+i+'">Ứng tuyển '+I.arrow+'</button></div></div>'+
+    '<div class="detail">'+detailHtml(j.more||[])+'</div></article>';
+  });
+  list.innerHTML=h||'<p class="empty">Chưa có vị trí phù hợp. Hãy thử từ khóa hoặc lĩnh vực khác.</p>';
+  document.getElementById("count").textContent=n+" vị trí phù hợp";
+}
+q.addEventListener("input",render);fld.addEventListener("change",render);
+list.addEventListener("click",function(e){
+  var m=e.target.closest("button.more"),a=e.target.closest("button[data-a]");
+  if(m){var art=m.closest(".job");art.classList.toggle("open");m.setAttribute("aria-expanded",art.classList.contains("open"))}
+  if(a){pos.value=a.getAttribute("data-a");document.getElementById("ung-tuyen").scrollIntoView({behavior:"smooth"})}
+});
+document.getElementById("f").addEventListener("submit",function(e){
+  e.preventDefault();
+  var n=document.getElementById("n").value.trim(),em=document.getElementById("e").value.trim(),p=document.getElementById("p").value.trim(),
+      cv=document.getElementById("cv").value.trim(),msg=document.getElementById("msg").value.trim(),j=JOBS[pos.value],after=document.getElementById("after");
+  if(!n||!em||!p||!/^\S+@\S+\.\S+$/.test(em)){after.textContent="Vui lòng điền đủ họ tên, email hợp lệ và số điện thoại.";return}
+  var body="Xin chào,\n\nMình muốn ứng tuyển vị trí "+j.t+" ("+j.c+").\n\nHọ và tên: "+n+"\nEmail: "+em+"\nSố điện thoại: "+p+(cv?"\nLink CV / Portfolio: "+cv:"")+(msg?"\n\nLời nhắn:\n"+msg:"")+"\n\n(Mình đính kèm CV trong email này.)\n\nCảm ơn bạn.";
+  showDraft("Ứng tuyển "+j.t+" – "+n,body);
+});
+/* Quản lý vị trí (chỉ chủ trang / người có quyền sửa thấy) */
+var AFTER=document.getElementById("after").textContent,admin=document.getElementById("admin"),aLink=document.getElementById("adminLink"),art=null,sel=-1,pend=-1;
+var FIELDS=[["t","Tên vị trí"],["c","Công ty"],["f","Lĩnh vực"],["l","Địa điểm"],["s","Mức lương / hỗ trợ"],["dl","Hạn nộp (để trống nếu chưa đặt hạn)"]];
+function buildDoc(){
+  var c=document.documentElement.cloneNode(true),f=c.querySelector("#field");
+  c.querySelector("#jobs-data").textContent=JSON.stringify({jobs:JOBS,site:SITE}).replace(/</g,"\\u003c");
+  c.querySelector("#list").innerHTML="";
+  var a=c.querySelector("#admin");a.innerHTML="";a.hidden=true;
+  while(f.options.length>1)f.remove(1);
+  c.querySelector("#pos").innerHTML="";
+  c.querySelector("#count").textContent="";
+  c.querySelector("#after").textContent=AFTER;
+  var o=c.querySelector("#out");o.innerHTML="";o.hidden=true;
+  c.querySelector("#cvn").textContent="Chưa chọn tệp";c.querySelector("#cvx").hidden=true;
+  c.querySelector("#adminLink").hidden=true;
+  Array.prototype.forEach.call(c.querySelectorAll("script[src]"),function(s){s.remove()});
+  return "<!DOCTYPE html>\n"+c.outerHTML;
+}
+function status(t){var s=document.getElementById("ast");if(s)s.textContent=t}
+function changed(){fill();render()}
+function adminUI(){
+  var h='<div class="adm"><div class="adm-h"><h3>Quản lý trang</h3><span id="ast" role="status"></span></div><div class="adm-t" role="tablist"><button type="button" role="tab" data-tab="site" aria-selected="'+(tab==='site')+'">Tổng quan</button><button type="button" role="tab" data-tab="jobs" aria-selected="'+(tab==='jobs')+'">Vị trí</button></div>';
+  if(tab==='site'){h+=siteUI()+SAVEROW;admin.innerHTML=h;return}
+  JOBS.forEach(function(j,i){h+='<div class="adm-r"><div><b>'+esc(j.t)+'</b><small>'+esc(j.c)+'</small></div><div class="adm-b"><button type="button" data-e="'+i+'">Sửa</button><button type="button" data-u="'+i+'" aria-label="Chuyển lên">↑</button><button type="button" data-d="'+i+'">'+(pend===i?"Chắc chắn xóa?":"Xóa")+'</button></div></div>'});
+  h+='<p><button class="btn line sm" type="button" data-new="1">+ Thêm vị trí</button></p>';
+  if(sel>=0&&JOBS[sel]){
+    var j=JOBS[sel];
+    h+='<div class="adm-f"><h4>Đang sửa: '+esc(j.t)+'</h4><div class="g">';
+    FIELDS.forEach(function(F){h+='<div class="f"><label for="a_'+F[0]+'">'+F[1]+'</label><input class="in" id="a_'+F[0]+'" data-k="'+F[0]+'" value="'+esc(j[F[0]]||"")+'"></div>'});
+    h+='</div><div class="f"><label for="a_d">Mô tả ngắn</label><textarea id="a_d" data-k="d">'+esc(j.d||"")+'</textarea></div><div class="f"><label for="a_m">Chi tiết khi bấm “Xem mô tả” (mỗi dòng một ý, dòng bắt đầu bằng # là tiêu đề mục)</label><textarea id="a_m" data-k="more">'+esc((j.more||[]).join("\n"))+'</textarea></div></div>';
+  }
+  h+='<div class="adm-s"><button class="btn sm" type="button" id="save">Tải về bản trang mới</button><button class="btn line sm" type="button" id="close">Đóng</button></div></div>';
+  admin.innerHTML=h;
+}
+function save(b){
+  var blob=new Blob([buildDoc()],{type:"text/html"}),a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);a.download="index.html";
+  document.body.appendChild(a);a.click();a.remove();
+  status("Đã tải về index.html. Hãy tải tệp này lên nơi lưu trữ web để cập nhật trang.");
+}
+admin.addEventListener("input",function(e){
+  var k=e.target.getAttribute&&e.target.getAttribute("data-k");
+  if(!k||sel<0)return;
+  JOBS[sel][k]=k==="more"?e.target.value.split("\n").map(function(x){return x.trim()}).filter(Boolean):e.target.value;
+  changed();status("Có thay đổi chưa lưu.");
+});
+admin.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  if(b.hasAttribute("data-e")){sel=+b.getAttribute("data-e");pend=-1;adminUI()}
+  else if(b.hasAttribute("data-u")){
+    var i=+b.getAttribute("data-u");
+    if(i>0){var t=JOBS[i];JOBS[i]=JOBS[i-1];JOBS[i-1]=t;if(sel===i)sel=i-1;else if(sel===i-1)sel=i;changed();adminUI();status("Có thay đổi chưa lưu.")}
+  }else if(b.hasAttribute("data-d")){
+    var d=+b.getAttribute("data-d");
+    if(pend===d){JOBS.splice(d,1);sel=-1;pend=-1;changed();adminUI();status("Đã xóa. Nhớ bấm Tải về bản trang mới.")}
+    else{pend=d;adminUI()}
+  }else if(b.hasAttribute("data-new")){
+    JOBS.push({t:"Vị trí mới",c:"Công ty đối tác",f:"Khác",d:"",l:"Trao đổi theo công ty",s:"Trao đổi theo công ty",dl:"",more:[]});
+    sel=JOBS.length-1;changed();adminUI();status("Có thay đổi chưa lưu.");
+  }else if(b.hasAttribute("data-tab")){tab=b.getAttribute("data-tab");adminUI()}else if(b.id==="close"){admin.hidden=true}
+  else if(b.id==="save"){save(b)}
+});
+aLink.addEventListener("click",function(e){
+  e.preventDefault();admin.hidden=!admin.hidden;
+  if(!admin.hidden){adminUI();admin.scrollIntoView({behavior:"smooth"})}
+});
+var cvFile=null,cvf=document.getElementById('cvf'),cvn=document.getElementById('cvn'),cvx=document.getElementById('cvx'),NOF='Chưa chọn tệp';
+cvf.addEventListener('change',function(){
+  var f=cvf.files&&cvf.files[0];cvFile=null;cvx.hidden=true;
+  if(!f){cvn.textContent=NOF;return}
+  if(!/\.(pdf|docx?)$/i.test(f.name)){cvn.textContent='Chỉ nhận tệp PDF, DOC hoặc DOCX.';cvf.value='';return}
+  if(f.size>10*1024*1024){cvn.textContent='Tệp quá lớn, tối đa 10 MB.';cvf.value='';return}
+  cvFile=f;cvn.textContent=f.name;cvx.hidden=false;
+});
+cvx.addEventListener('click',function(){cvf.value='';cvFile=null;cvn.textContent=NOF;cvx.hidden=true});
+function showDraft(subj,body){
+  var out=document.getElementById('out'),dr,cp,sh,txt='Tiêu đề: '+subj+'\n\n'+body;
+  var mail='mailto:'+EMAIL+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+  var gm='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(EMAIL)+'&su='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+  var canShare=!!(cvFile&&navigator.share&&navigator.canShare&&navigator.canShare({files:[cvFile]}));
+  out.innerHTML='<p><b>Bản nháp email đã sẵn sàng.</b> '+(cvFile?'Nhớ đính kèm tệp <b>'+esc(cvFile.name)+'</b> trước khi gửi.':'Nhớ đính kèm CV trước khi gửi.')+'</p><div class="outb"><a class="btn sm" href="'+esc(gm)+'" target="_blank" rel="noopener">Mở Gmail</a><a class="btn line sm" href="'+esc(mail)+'" target="_blank" rel="noopener">Mở ứng dụng thư</a><button class="btn line sm" type="button" id="cp">Sao chép nội dung</button>'+(canShare?'<button class="btn line sm" type="button" id="sh">Gửi kèm CV</button>':'')+'</div><label for="draft">Gửi tới '+esc(EMAIL)+'</label><textarea id="draft" readonly>'+esc(txt)+'</textarea>';
+  out.hidden=false;
+  document.getElementById('after').textContent='';
+  dr=document.getElementById('draft');cp=document.getElementById('cp');sh=document.getElementById('sh');
+  cp.onclick=function(){
+    function fb(){dr.select();try{document.execCommand('copy');cp.textContent='Đã sao chép'}catch(x){cp.textContent='Hãy chọn và sao chép thủ công'}}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){cp.textContent='Đã sao chép'},fb)}else{fb()}
+  };
+  if(sh)sh.onclick=function(){navigator.share({files:[cvFile],title:subj,text:'Gửi tới '+EMAIL+'\n\n'+body}).catch(function(){})};
+  out.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+var tab='site',SAVEROW='<div class="adm-s"><button class="btn sm" type="button" id="save">Tải về bản trang mới</button><button class="btn line sm" type="button" id="close">Đóng</button></div></div>';
+function readSite(){
+  var g=function(i){return document.getElementById(i).textContent};
+  return {ey:g('hEy'),t:g('hT'),e:g('hE'),l:g('hL'),tr:g('hTr'),
+    chips:[].map.call(document.querySelectorAll('.chip'),function(x){return x.textContent}),
+    st:[{n:'',l:g('s0l')},{n:g('s1n'),l:g('s1l')},{n:g('s2n'),l:g('s2l')},{n:g('s3n'),l:g('s3l')}]};
+}
+function applySite(){
+  var S=SITE,s=function(i,v){var el=document.getElementById(i);if(el&&v!=null)el.textContent=v};
+  s('hEy',S.ey);s('hT',S.t);s('hE',S.e);s('hL',S.l);s('hTr',S.tr);
+  [].forEach.call(document.querySelectorAll('.chip'),function(x,i){if(S.chips[i]!=null)x.textContent=S.chips[i]});
+  s('s0l',S.st[0].l);
+  for(var i=1;i<4;i++){s('s'+i+'n',S.st[i].n);s('s'+i+'l',S.st[i].l)}
+}
+function siteUI(){
+  var S=SITE,h='<div class="adm-f" style="border-top:0;margin-top:0;padding-top:0"><h4>Đầu trang</h4>';
+  h+='<div class="f"><label for="s_ey">Dòng nhỏ phía trên tiêu đề</label><input class="in" id="s_ey" data-s="ey" value="'+esc(S.ey)+'"></div>';
+  h+='<div class="g"><div class="f"><label for="s_t">Tiêu đề</label><input class="in" id="s_t" data-s="t" value="'+esc(S.t)+'"></div><div class="f"><label for="s_e">Từ nhấn màu cam</label><input class="in" id="s_e" data-s="e" value="'+esc(S.e)+'"></div></div>';
+  h+='<div class="f"><label for="s_l">Mô tả</label><textarea id="s_l" data-s="l">'+esc(S.l)+'</textarea></div>';
+  h+='<div class="f"><label for="s_tr">Dòng cam kết</label><input class="in" id="s_tr" data-s="tr" value="'+esc(S.tr)+'"></div>';
+  h+='<h4>Bốn nhãn quay quanh vòng tròn</h4><div class="g">';
+  S.chips.forEach(function(c,i){h+='<div class="f"><label for="s_c'+i+'">Nhãn '+(i+1)+'</label><input class="in" id="s_c'+i+'" data-s="chip" data-i="'+i+'" value="'+esc(c)+'"></div>'});
+  h+='</div><h4>Dải số liệu</h4><p style="margin:0 0 14px;color:var(--muted)">Số ở ô đầu tiên tự đếm theo số lĩnh vực nên không cần nhập.</p>';
+  S.st.forEach(function(x,i){h+='<div class="g"><div class="f"><label for="s_n'+i+'">Số / chữ lớn '+(i+1)+'</label>'+(i===0?'<input class="in" id="s_n0" value="Tự động" disabled>':'<input class="in" id="s_n'+i+'" data-s="stn" data-i="'+i+'" value="'+esc(x.n)+'">')+'</div><div class="f"><label for="s_x'+i+'">Chú thích '+(i+1)+'</label><input class="in" id="s_x'+i+'" data-s="stl" data-i="'+i+'" value="'+esc(x.l)+'"></div></div>'});
+  return h+'</div>';
+}
+admin.addEventListener('input',function(e){
+  var t=e.target,k=t.getAttribute&&t.getAttribute('data-s');
+  if(!k)return;
+  var i=+t.getAttribute('data-i');
+  if(k==='chip')SITE.chips[i]=t.value;else if(k==='stn')SITE.st[i].n=t.value;else if(k==='stl')SITE.st[i].l=t.value;else SITE[k]=t.value;
+  applySite();status('Có thay đổi chưa lưu.');
+});
+function detailHtml(a){
+  var o='',open=false;
+  a.forEach(function(m){
+    if(m.charAt(0)==='#'){if(open)o+='</ul>';o+='<h4>'+esc(m.replace(/^#+\s*/,''))+'</h4><ul>';open=true}
+    else{if(!open){o+='<ul>';open=true}o+='<li>'+esc(m)+'</li>'}
+  });
+  if(open)o+='</ul>';
+  return o;
+}
+var R0=readSite();
+if(!SITE){SITE=R0}else{for(var kk in R0){if(SITE[kk]==null)SITE[kk]=R0[kk]}applySite()}
+render();
+function checkAdmin(){
+  var on=location.hash==="#quan-ly";
+  aLink.hidden=!on;
+  if(on){admin.hidden=false;adminUI();admin.scrollIntoView({behavior:"smooth"})}
+  else{admin.hidden=true}
+}
+window.addEventListener("hashchange",checkAdmin);
+checkAdmin();
+</script>
+</body>
+</html>
